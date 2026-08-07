@@ -1,17 +1,19 @@
 # Olist 데이터 감사 기록
 
-## 53. GitHub 연결 상태 점검
+## 53. 대시보드 입력 데이터 준비성 검증
 기준일: 2026-08-07
 
-- VS Code에서 GitHub 사용자 `peumuoe`의 브라우저 인증이 완료되었고 게시 직전 공개 범위를 재점검했다.
-- 대용량 파일은 `.venv`, `data/raw`, `data/external`, `data/processed` 아래에 있으며 공개 제외 규칙이 적용되어 있다.
-- `.agents`, `.codex`, `.env*`, 키·자격증명·비밀정보 파일 패턴을 추가로 제외했다.
-- 사용자가 확인한 GitHub 사용자명은 `peumuoe`이다.
-- GitHub 연동에서 접근 가능한 설치 저장소를 읽기 전용으로 조회했다.
-- 조회 결과 접근 가능한 저장소는 0개였다.
-- 이는 GitHub 계정이 아직 연결되지 않았거나, 연결된 GitHub App에 저장소 접근 권한이 부여되지 않은 상태를 의미한다.
-- 제공된 이메일은 GitHub 사용자명으로 확인되지 않았으며, 비밀번호는 조회·인증·기록에 사용하지 않았다.
-- 프로젝트 파일은 GitHub에 생성·수정·업로드하지 않았다.
+- 4개 의사결정 페이지를 9개 공개 Fact와 주장 근거·데이터 사전에 매핑했다.
+- KPI 카드에 필요한 공식 30일·365일 재구매율, 테스트 Lift@10%·Recall@10%, 역사적 Q3·Q4 후보 수와 런치 상태가 공개 마트에 존재함을 확인했다.
+- 고객 수준 테이블 간 조인은 사용하지 않고 각 Fact의 Grain을 유지하도록 설계했다.
+- 외부 비교에는 인과해석 제한, CRM 수용량에는 비증분 관찰값 표시가 데이터 컬럼으로 포함되어 있다.
+- 대시보드 구현 전 입력 데이터 품질검사 9개는 모두 통과 상태다.
+
+### 산출물
+
+- `docs/dashboard_design_spec.md`
+- `README.md`
+- `requirements.txt`
 
 ## 1. 감사 목적
 
@@ -3531,7 +3533,7 @@ Shopify 공식 분석 필드 문서의 returning customer rate는 선택 기간�
 
 - Tableau·Power BI·Looker Studio가 공통으로 사용할 수 있는 집계 CSV 패키지를 생성했다.
 - 고객·주문·판매자·리뷰 식별자와 고객 단위 모델 점수는 포함하지 않았다.
-- Olist·H&M·REES46 원본, 대용량 외부 데이터와 고객 단위 가공 마트는 GitHub 공개대상에서 제외했다.
+- Olist·H&M·REES46 원본, 대용량 외부 데이터와 고객 단위 가공 마트는 공개용 BI 패키지에서 제외했다.
 - 모든 CSV는 Windows BI 도구의 한글 호환성을 위해 UTF-8 BOM으로 저장했다.
 
 ### 52.2 공개 Fact 테이블
@@ -3554,11 +3556,8 @@ Shopify 공식 분석 필드 문서의 returning customer rate는 선택 기간�
 - CRM 수용량 18행 모두 과거 관찰 재구매이며 증분효과가 아니라는 플래그를 포함했다.
 - 식별자 컬럼 0개, 빈 Fact 0개, 총 9개 자동검사 통과
 
-### 52.4 GitHub 준비 상태와 산출물
+### 52.4 분석 산출물
 
-- 현재 폴더의 `.git`은 비어 있어 아직 로컬 Git 저장소가 아니다.
-- GitHub 앱 도구는 사용 가능하지만 게시 전 정확한 `owner/repository`, 공개 여부와 저장소 생성·사용 선택이 필요하다.
-- `.gitignore`에 원본·외부·가공 고객 데이터와 직렬화 모델 제외규칙을 추가했다.
 - `src/42_build_portfolio_bi_data_mart.py`
 - `data/portfolio_data/` 공개 BI 패키지
 - `data/portfolio_data/data_dictionary.csv`
