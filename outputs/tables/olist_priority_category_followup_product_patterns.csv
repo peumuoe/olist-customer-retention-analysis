@@ -1,0 +1,12 @@
+first_category,product_behavior,customer_count,category_customer_count,category_customer_share_pct
+auto,cross_category_no_product_overlap,8,18,44.444444
+auto,exact_product_set_repeat,2,18,11.111111
+auto,partial_product_overlap,1,18,5.555556
+auto,same_category_different_product,7,18,38.888889
+toys,cross_category_no_product_overlap,9,18,50.0
+toys,exact_product_set_repeat,2,18,11.111111
+toys,same_category_different_product,7,18,38.888889
+watches_gifts,cross_category_no_product_overlap,11,37,29.72973
+watches_gifts,exact_product_set_repeat,9,37,24.324324
+watches_gifts,partial_product_overlap,1,37,2.702703
+watches_gifts,same_category_different_product,16,37,43.243243

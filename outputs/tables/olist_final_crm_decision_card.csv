@@ -1,0 +1,10 @@
+﻿decision_field,decision_value,interpretation
+current_project_decision,DO_NOT_LAUNCH,"current Olist data contains no live consent, channel, send, complaint, or cost state"
+recommended_business_next_action,CONDITIONAL_RANDOMIZED_PILOT,organizational owner must satisfy every blocked and pending launch gate first
+pilot_population,Q3/Q4_high within-value-band score top 10%,"historical candidate count 4,667; not a live contact list"
+treatment,one non-discount discovery message,seller/category module selected by first-order category
+primary_decision_window,>24h to 30d,60d and 90d remain secondary and cannot replace a failed primary
+scale_rule,"GO only if primary CI lower >0, contribution nonnegative, guardrails and data quality pass","otherwise ITERATE, STOP, or NO DECISION"
+ready_gate_count,2,historical design evidence only
+pending_gate_count,3,requires organizational decision
+blocked_gate_count,4,cannot be resolved from current public Olist data

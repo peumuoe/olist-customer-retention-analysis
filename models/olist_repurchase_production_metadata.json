@@ -1,0 +1,49 @@
+{
+  "model_version": "olist_logistic_c001_20260724",
+  "created_date": "2026-07-24",
+  "model_family": "logistic_regression",
+  "frozen_hyperparameters": {
+    "C": 0.01,
+    "penalty": "l2",
+    "solver": "lbfgs"
+  },
+  "target": "target_repeat_over_24h_within_30d",
+  "training_population": "eligible_30d == True",
+  "training_row_count": 86772,
+  "training_positive_count": 535,
+  "training_data_start": "2016-09-15 12:16:38",
+  "training_data_end": "2018-07-30 14:57:33",
+  "source_data_cutoff": "2018-08-29 15:00:37",
+  "score_population": "all historical first-order customer rows",
+  "score_output_warning": "historical backfill; not a current live campaign list",
+  "probability_warning": "use primarily as a ranking score; campaign incrementality is unmeasured",
+  "recommended_pilot_policy": "within-value-band top 10% for Q3 and Q4_high",
+  "numeric_features": [
+    "item_count",
+    "product_count",
+    "seller_count",
+    "category_count",
+    "item_price_sum",
+    "freight_value_sum",
+    "payment_value_sum",
+    "payment_installments_max",
+    "payment_type_count",
+    "freight_share",
+    "estimated_delivery_lead_days",
+    "purchase_hour",
+    "purchase_weekday",
+    "purchase_month"
+  ],
+  "categorical_features": [
+    "customer_state",
+    "primary_category",
+    "primary_payment_type",
+    "order_value_band",
+    "item_count_group",
+    "seller_count_group",
+    "installment_group"
+  ],
+  "transformed_feature_count": 112,
+  "tie_break_rule": "score descending, then customer_unique_id ascending",
+  "validated_test_metrics_source": "outputs/tables/olist_ml_test_model_summary.csv"
+}

@@ -1,0 +1,9 @@
+﻿scenario,scenario_description,window_days,included_purchase_events,excluded_purchase_events,included_customers,eligible_customer_count,repeat_customer_count,retention_rate_pct,ineligible_right_censored_count,difference_from_base_pct_point
+base_all_events,모든 구매 이벤트 포함,30,1402758,0,697470,347118,139956,40.31943,350352,0.0
+base_all_events,모든 구매 이벤트 포함,60,1402758,0,697470,14064,8388,59.641638,683406,0.0
+exclude_over_24h,24시간 초과 세션 제외,30,1402690,68,697461,347109,139953,40.319611,350352,0.000181
+exclude_over_24h,24시간 초과 세션 제외,60,1402690,68,697461,14061,8385,59.633028,683400,-0.00861
+exclude_cross_month,월 파일 경계 세션 제외,30,1402742,16,697468,347115,139956,40.319779,350353,0.000349
+exclude_cross_month,월 파일 경계 세션 제외,60,1402742,16,697468,14064,8388,59.641638,683404,0.0
+exclude_either_flag,24시간 초과 또는 월 경계 세션 제외,30,1402690,68,697461,347109,139953,40.319611,350352,0.000181
+exclude_either_flag,24시간 초과 또는 월 경계 세션 제외,60,1402690,68,697461,14061,8385,59.633028,683400,-0.00861

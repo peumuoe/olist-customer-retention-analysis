@@ -1,0 +1,10 @@
+﻿file_name,event_type,row_count,row_rate_pct
+2019-Oct.csv,cart,926516,2.182669
+2019-Oct.csv,purchase,742849,1.74999
+2019-Oct.csv,view,40779399,96.067341
+2019-Nov.csv,cart,3028930,4.487172
+2019-Nov.csv,purchase,916939,1.358388
+2019-Nov.csv,view,63556110,94.15444
+ALL,cart,3955446,3.597471
+ALL,purchase,1659788,1.509574
+ALL,view,104335509,94.892955

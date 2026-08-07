@@ -1,0 +1,14 @@
+﻿check_name,value,status
+mart_rows,1402758.0,PASS
+unique_purchase_event_keys,1402758.0,PASS
+duplicate_purchase_event_key_rows,0.0,PASS
+purchase_users,697470.0,PASS
+purchase_row_count_sum,1659788.0,PASS
+required_null_rows,0.0,PASS
+negative_duration_rows,0.0,PASS
+cross_month_events,16.0,PASS
+over_30m_events,6172.0,PASS
+over_24h_events,68.0,PASS
+zero_recorded_price_sum_events,0.0,PASS
+negative_recorded_price_sum_events,0.0,PASS
+recorded_item_price_sum_total,505152392.77,PASS

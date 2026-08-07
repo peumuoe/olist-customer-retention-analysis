@@ -1,0 +1,9 @@
+﻿order_status,order_count,missing_purchase_timestamp,missing_approved_at,missing_carrier_date,missing_customer_delivery_date,order_ratio_pct
+delivered,96478,0,14,2,8,97.02
+shipped,1107,0,0,0,1107,1.11
+canceled,625,0,141,550,619,0.63
+unavailable,609,0,0,609,609,0.61
+invoiced,314,0,0,314,314,0.32
+processing,301,0,0,301,301,0.3
+created,5,0,5,5,5,0.01
+approved,2,0,0,2,2,0.0

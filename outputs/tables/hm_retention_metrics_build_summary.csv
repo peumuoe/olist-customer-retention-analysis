@@ -1,0 +1,21 @@
+﻿check_name,value
+purchase_event_mart_rows,9174457
+customer_metric_rows,1362281
+unique_customer_ids,1362281
+duplicate_customer_id_rows,0
+null_first_purchase_rows,0
+null_second_purchase_rows,447175
+all_time_repeat_customers,915106
+zero_day_repeat_customers_all_time,7198
+maximum_customer_event_count,433
+minimum_purchase_date,2018-09-20 00:00:00
+observation_cutoff,2020-09-22 00:00:00
+date_parse_failures,0
+event_number_parse_failures,0
+duplicate_first_event_rows,0
+duplicate_second_event_rows,0
+negative_second_purchase_intervals,0
+dates_sorted_ascending,True
+event_rows_match_prior_mart,True
+customer_count_matches_prior_mart,True
+eligible_counts_non_increasing,True

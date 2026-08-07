@@ -1,0 +1,5 @@
+﻿population_id,population_rule,historical_customer_count,treatment_count_dry_run,control_count_dry_run,current_live_contact_authorized_count
+P0_all_historical_candidates,Q3 or Q4_high and within-value-band score top 10%,4667,2333,2334,0
+content_related_product_and_category_discovery,related_product_and_category_discovery,4158,2075,2083,0
+content_same_seller_and_category_exploration,same_seller_and_category_exploration,509,258,251,0
+monitor_q1_q2_top10,Q1_low or Q2 and within-value-band score top 10%,4667,0,0,0

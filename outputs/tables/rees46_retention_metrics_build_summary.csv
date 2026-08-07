@@ -1,0 +1,12 @@
+﻿check_name,value,status
+source_purchase_events,1402758,PASS
+customer_metric_rows,697470,PASS
+unique_customers,697470,PASS
+duplicate_customer_rows,0,PASS
+purchase_event_count_sum,1402758,PASS
+repeat_purchase_customers_all_period,256959,PASS
+negative_second_purchase_gap,0,PASS
+eligible_30d_customers,347118,PASS
+eligible_60d_customers,14064,PASS
+eligible_90d_customers_prior_audit,0,PASS
+observation_end_time,2019-11-30 23:59:44+00:00,PASS

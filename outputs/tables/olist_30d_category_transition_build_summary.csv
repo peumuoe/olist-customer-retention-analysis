@@ -1,0 +1,12 @@
+check_name,actual_value,expected_value,passed
+eligible_customer_count,86772,86772,True
+transition_customer_count,1373,1373,True
+unique_transition_customer_count,1373,1373,True
+missing_second_order_count,0,0,True
+invalid_days_to_second_count,0,0,True
+first_category_mismatch_count,0,0,True
+pair_count_sum,1373,1373,True
+summary_count_sum,1373,1373,True
+timing_count_sum,1373,1373,True
+over_24h_followup_pair_count_sum,535,535,True
+priority_category_count,5,5,True

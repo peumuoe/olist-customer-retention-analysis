@@ -1,0 +1,17 @@
+﻿check_name,value
+source_transaction_rows,31788324
+processed_transaction_rows,31788324
+purchase_event_mart_rows,9174457
+unique_customers,1362281
+single_event_customers,447175
+repeat_customers_all_time,915106
+maximum_customer_event_count,433
+minimum_purchase_date,2018-09-20 00:00:00
+maximum_purchase_date,2020-09-22 00:00:00
+maximum_item_rows_per_event,570
+maximum_unique_articles_per_event,159
+transaction_date_parse_failures,0
+price_parse_failures,0
+dates_sorted_ascending,True
+transaction_rows_match_prior_audit,True
+purchase_event_rows_match_prior_audit,True

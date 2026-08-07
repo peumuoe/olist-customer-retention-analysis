@@ -1,0 +1,10 @@
+prediction_point,segment_name,eligible_customer_count,customer_share_pct,observed_repeat_count,observed_repeat_rate_pct,operational_over_24h_repeat_count,operational_over_24h_repeat_rate_pct,median_first_payment_value,strategy_hypothesis,primary_kpi_candidate,evidence_note
+order_time,seller_category_high_value_candidate,3804,4.383903,31,0.814932,21.0,0.55205,268.3,동일 판매자 내 카테고리 상품 탐색; 혜택 비용 별도 통제,30일 24시간 초과 재구매율,관찰 행동 기반 가설; 효과 미검증
+order_time,seller_category_standard_value_candidate,7958,9.171161,93,1.168635,52.0,0.653431,89.285,동일 판매자 내 카테고리 상품 탐색,30일 24시간 초과 재구매율,관찰 행동 기반 가설; 효과 미검증
+order_time,other_category_high_value_candidate,17944,20.679482,276,1.538119,128.0,0.71333,264.54,고가 첫 주문 고객의 일반 카테고리 재방문 탐색,30일 24시간 초과 재구매율,가치 보존용 운영 분리; 추천 경로 근거 없음
+order_time,general_order_time_candidate,57066,65.765454,973,1.705043,334.0,0.585287,79.12,향후 예측 점수 기반 우선순위 적용,30일 24시간 초과 재구매율,현재 규칙만으로 세부 메시지 미확정
+delivery_complete,delayed_seller_category_candidate,921,1.088485,2,0.217155,,,143.7,배송 지연 사과·회복 후 카테고리 탐색,배송 완료 후 30일 재구매율,서비스 회복 가설; 기존 분석에서 인과효과 미확인
+delivery_complete,delayed_other_category_candidate,5756,6.802737,26,0.451703,,,109.77,배송 지연 사과·서비스 회복,배송 완료 후 30일 재구매율,서비스 회복 가설; 기존 분석에서 인과효과 미확인
+delivery_complete,ontime_seller_category_candidate,10514,12.425987,59,0.561157,,,124.52,배송 완료 확인 후 동일 판매자 카테고리 탐색,배송 완료 후 30일 재구매율,관찰 행동 기반 가설; 효과 미검증
+delivery_complete,ontime_other_category_candidate,67422,79.682791,380,0.563614,,,102.03,배송 완료 확인 후 일반 재방문,배송 완료 후 30일 재구매율,향후 예측 점수로 대상 압축 필요
+delivery_complete,delivery_status_unknown_candidate,0,0.0,0,,,,,발송 보류 및 데이터 상태 점검,데이터 완전성,배송 정보 미확정 또는 누락

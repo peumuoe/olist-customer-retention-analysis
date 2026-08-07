@@ -1,0 +1,7 @@
+check_name,actual_value,expected_value,passed
+eligible_row_count,86772,86772,True
+positive_count,535,535,True
+split_count_sum,86772,86772,True
+all_splits_have_positives,4,4,True
+test_prediction_count,17355,17355,True
+prediction_range_violations,0,0,True

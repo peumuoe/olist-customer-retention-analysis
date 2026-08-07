@@ -1,0 +1,11 @@
+﻿check_name,actual_value,expected_value,passed
+test_row_count,17355,17355,True
+unique_test_customers,17355,17355,True
+observation_cutoff,2018-08-29 15:00:37,2018-08-29 15:00:37,True
+30d_eligible_count,17355,17355,True
+30d_positive_count_matches_frozen_test,108,108,True
+30d_lift_matches_frozen_test,1.7587525601638503,1.758753,True
+eligibility_non_increasing,1,1,True
+positive_horizon_non_decreasing_on_common_90d_subset,1,1,True
+missing_scores,0,0,True
+q3q4_policy_only,0,0,True

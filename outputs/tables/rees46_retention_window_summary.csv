@@ -1,0 +1,3 @@
+﻿window_days,eligible_customer_count,repeat_customer_count,retention_rate_pct,ineligible_right_censored_count,interpretation_role
+30,347118,139956,40.31943,350352,주 외부 비교 지표
+60,14064,8388,59.641638,683406,제한적 참고·민감도 지표

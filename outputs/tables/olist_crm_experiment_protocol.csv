@@ -1,0 +1,24 @@
+protocol_field,protocol_value
+experiment_id,olist_crm_q3q4_top10_pilot_v1_20260724
+design_status,dry_run_design_not_launched
+objective,estimate incremental effect of one CRM contact on 30d repeat purchase
+randomization_unit,customer_unique_id
+eligible_population,Q3 or Q4_high and within-value-band model-score top 10%
+assignment_ratio,1:1 treatment vs control
+stratification,order_value_band x state_bucket x score_quintile
+treatment,one non-discount related-product/category discovery message; channel must be fixed before launch
+control,no incremental campaign contact; normal transactional communication continues
+planned_trigger,24 to 48 hours after first order
+outcome_window,>24 hours through 30 days after first order
+primary_analysis,intention-to-treat
+multiple_testing,one primary KPI; secondary and subgroup results are exploratory
+available_candidate_count,4667
+available_n_per_arm,2333
+planning_baseline_rate,0.01767956
+available_sample_mde_absolute_pct_point,1.252952
+available_sample_mde_relative,0.708701
+launch_gate_1,"confirm legal consent, contact channel, frequency cap, and suppression rules"
+launch_gate_2,"freeze message, benefit, trigger, sample-size target, and analysis code"
+launch_gate_3,"verify CRM delivery, unsubscribe, complaint, cost, and order joins"
+stopping_rule,do not stop early for observed conversion unless a pre-specified sequential design is adopted
+interpretation,model lift is not campaign incrementality; only randomized comparison estimates effect

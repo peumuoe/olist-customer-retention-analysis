@@ -1,0 +1,5 @@
+decision,primary_condition,commercial_condition,guardrail_condition,data_quality_condition,interpretation
+GO_확대_또는_확증실험,30일 ITT 위험차이 95% 구간 하한 > 0,접촉비 차감 후 증분 공헌이익 >= 0,사전 정의 수신거부·불만·취소 한계 미초과,randomization and required event joins pass,양의 효과가 지지됨; 검증한 모집단과 처치 범위 안에서만 확대 검토
+ITERATE_판단보류,점추정치 > 0이지만 95% 구간이 0 포함,명확한 음의 공헌이익 신호 없음,중대한 위해 신호 없음,analysis valid but precision insufficient,성공·실패로 단정하지 않고 용량·시점 재검토 또는 동등 코호트 누적
+STOP_중단_또는_재설계,효과 추정치가 음수이거나 구간이 사업상 중대한 손실 포함,증분 공헌이익 < 0,사전 정의 위해 한계 중 하나라도 초과,"if joins fail, stop analysis claim and repair instrumentation",확대하지 않고 메시지·시점·타기팅·측정 실패를 구분
+NO_DECISION_실험무효,무작위화 훼손·대조군 오염·결과 성숙 미완료,비용 데이터 누락,필수 안전지표 누락,critical launch/analysis checks fail,해당 실험으로 사업 의사결정을 지원할 수 없음

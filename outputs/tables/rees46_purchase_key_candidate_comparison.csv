@@ -1,0 +1,8 @@
+﻿candidate_definition,event_count,grain,known_risk
+purchase 원본 행,1659788,상품 purchase 로그 1행,다상품 구매와 확인된 완전 중복으로 구매 횟수 과대 가능
+user_session,1402758,세션 1개,한 세션 안의 여러 결제를 합칠 가능성
+user_id + user_session,1402758,고객·세션 1개,한 세션 안의 여러 결제를 합칠 가능성
+user_id + event_time,1659703,고객·정확한 시각 1개,같은 결제의 상품 로그 시각이 다르면 여러 구매로 분리
+user_id + user_session + event_time,1659703,고객·세션·정확한 시각 1개,같은 결제의 상품 로그 시각이 다르면 여러 구매로 분리
+"user_id + user_session, 연속 purchase 간격 30분 초과 시 분리",1408150,고객·세션 내 30분 간격 구매 묶음,실제 결제 경계가 아니라 시간 기준을 임의 적용
+"user_id + user_session, 연속 purchase 간격 60분 초과 시 분리",1404837,고객·세션 내 60분 간격 구매 묶음,실제 결제 경계가 아니라 시간 기준을 임의 적용

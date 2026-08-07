@@ -1,0 +1,15 @@
+check_name,actual_value,expected_value,passed
+detail_customer_count,73,73,True
+unique_customer_count,73,73,True
+first_order_unique_count,73,73,True
+second_order_unique_count,73,73,True
+category_counts_match,"{'auto': 18, 'toys': 18, 'watches_gifts': 37}","{'watches_gifts': 37, 'auto': 18, 'toys': 18}",True
+invalid_followup_day_count,0,0,True
+missing_order_feature_count,0,0,True
+exact_product_without_overlap_count,0,0,True
+exact_seller_without_overlap_count,0,0,True
+same_category_behavior_partition_count,45,45,True
+summary_row_count,6,6,True
+timing_count_sum,73,73,True
+product_pattern_count_sum,73,73,True
+price_all_scope_count_sum,73,73,True

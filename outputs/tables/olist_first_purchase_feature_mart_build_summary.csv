@@ -1,0 +1,13 @@
+﻿check_name,actual,expected,status
+customer_rows,93358,93358,PASS
+unique_customers,93358,93358,PASS
+duplicate_customers,0,0,PASS
+duplicate_first_order_ids,0,0,PASS
+first_timestamp_mismatches,0,0,PASS
+eligible_30d,86772,86772,PASS
+repeat_30d,1373,1373,PASS
+missing_item_aggregation,0,0,PASS
+missing_payment_aggregation,1,1,PASS
+segment_dimensions,9,9,PASS
+invalid_feature_availability,0,0,PASS
+all_dimension_denominators_reconcile,True,True,PASS

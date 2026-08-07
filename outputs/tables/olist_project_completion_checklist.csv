@@ -1,0 +1,13 @@
+﻿workstream,exit_requirement,status,evidence_path
+data_quality,"schema, keys, foreign keys, dates and order grain audited",complete,outputs/tables/schema_inventory.csv
+kpi,official 30/60/90/180/365d and operational target separated,complete,outputs/tables/retention_window_summary.csv
+external,"H&M, REES46 and public benchmark comparability assessed",complete,outputs/tables/external_retention_comparison.csv
+opportunity,priority segments and category transitions assessed,complete,outputs/tables/olist_improvement_opportunity_priority.csv
+prediction,"frozen logistic model independently, temporally and under imbalance sensitivity validated",complete,outputs/tables/olist_imbalance_diagnostic_conclusion.csv
+survival,right censoring and repurchase timing evaluated,complete,outputs/tables/olist_repurchase_survival_summary.csv
+multihorizon,30/60/90d frozen-score transfer assessed,complete,outputs/tables/olist_multihorizon_frozen_score_summary.csv
+errors_capacity,"TP/FP/FN/TN, capacity and break-even sensitivity audited",complete,outputs/tables/olist_model_top10_error_summary.csv
+crm_design,"target, treatment, control, KPIs, power and analysis code designed",complete,outputs/tables/olist_final_integrated_crm_playbook.csv
+risk_decision,"side effects, guardrails and GO/ITERATE/STOP/NO DECISION defined",complete,outputs/tables/olist_crm_experiment_decision_rules.csv
+actual_campaign_effect,incremental CRM effect and ROI,closed_unverifiable_with_current_data,outputs/tables/olist_final_crm_decision_card.csv
+reporting,"decision-ready report, evidence registry and logs updated",complete,reports/olist_repurchase_final_report.md

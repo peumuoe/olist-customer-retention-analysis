@@ -1,0 +1,9 @@
+model_name,segment_name,customer_count,positive_count,positive_rate_pct,pr_auc,mean_predicted_probability_pct
+logistic_raw,general_order_time_candidate,10958,60,0.5475451724767293,0.006982799734646786,0.6273110901232681
+logistic_raw,other_category_high_value_candidate,3703,34,0.9181744531460978,0.013393883283357983,0.600470119642758
+logistic_raw,seller_category_high_value_candidate,833,6,0.7202881152460985,0.008752137837343715,0.5709424962357784
+logistic_raw,seller_category_standard_value_candidate,1861,8,0.42987641053197206,0.0072329949041707135,0.6200122486587587
+xgboost_platt,general_order_time_candidate,10958,60,0.5475451724767293,0.006331354692577733,0.793928861618042
+xgboost_platt,other_category_high_value_candidate,3703,34,0.9181744531460978,0.011453616785093716,0.7626088857650757
+xgboost_platt,seller_category_high_value_candidate,833,6,0.7202881152460985,0.016720278409941003,0.764635443687439
+xgboost_platt,seller_category_standard_value_candidate,1861,8,0.42987641053197206,0.006129907761383524,0.8284543752670288

@@ -1,0 +1,6 @@
+monitor,warning_rule,alert_rule,action
+data_schema_and_required_features,any missing required column,scoring must stop,repair input contract before scoring
+score_or_feature_population_stability_index,PSI >= 0.10,PSI >= 0.25,"inspect period, channel, state and category mix"
+mature_outcome_calibration_ratio,outside 0.67 to 1.50,outside 0.50 to 2.00,recalibrate or suspend probability interpretation
+mature_outcome_lift_at_10pct,below 1.20,below 1.00,suspend score-based targeting and investigate
+top10_group_representation_ratio,outside 0.67 to 1.50,outside 0.50 to 2.00,review targeting concentration before launch

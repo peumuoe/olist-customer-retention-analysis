@@ -1,0 +1,7 @@
+kpi_role,kpi_name,unit,definition,analysis,required_source,decision_rule
+primary,30d_repeat_purchase_rate_over_24h,customer_rate,customers with >=1 delivered repeat order >24h and <=30d / randomized customers,intention_to_treat risk_difference and risk_ratio with 95% CI,orders,report estimate and CI; no success claim from p-value alone
+secondary,30d_repeat_order_count_per_customer,orders_per_randomized_customer,paid repeat orders >24h and <=30d / randomized customers,mean difference with bootstrap CI,orders,interpret only with primary KPI
+secondary,30d_observed_repeat_revenue_per_customer,currency_per_randomized_customer,observed repeat payment value within outcome window / randomized customers,mean difference with bootstrap CI,orders_and_payments,not future CLV
+guardrail,unsubscribe_rate,customer_rate,customers unsubscribing within 7d after planned send / delivered customers,risk difference,crm_delivery_and_consent_log,must be populated before launch
+guardrail,complaint_rate,customer_rate,spam or customer complaints / delivered customers,risk difference,crm_complaint_log,must be populated before launch
+guardrail,incremental_contribution_after_contact_cost,currency_per_randomized_customer,incremental contribution margin minus incentive and contact cost,treatment-control difference,margin_incentive_and_contact_cost,cannot calculate from current Olist data alone

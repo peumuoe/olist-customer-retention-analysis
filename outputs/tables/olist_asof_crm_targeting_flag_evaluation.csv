@@ -1,0 +1,7 @@
+prediction_point,target_definition,targeting_flag,eligible_customer_count,selected_customer_count,customer_coverage_pct,positive_count,positive_capture_pct,selected_positive_rate_pct,overall_positive_rate_pct,lift_vs_overall
+order_time,over_24h_to_30d_after_first_order,seller_exploration_category_flag,86772,11762,13.555064,73,13.64486,0.620643,0.616558,1.006625
+order_time,over_24h_to_30d_after_first_order,high_first_order_value_flag,86772,21748,25.063385,149,27.850467,0.68512,0.616558,1.111201
+order_time,over_24h_to_30d_after_first_order,seller_category_and_high_value_flag,86772,3804,4.383903,21,3.925234,0.55205,0.616558,0.895374
+delivery_complete,over_0h_to_30d_after_delivery_complete,seller_exploration_category_flag,84613,11435,13.514472,61,13.062099,0.53345,0.551925,0.966527
+delivery_complete,over_0h_to_30d_after_delivery_complete,delayed_delivery_flag,84613,6677,7.891222,28,5.995717,0.41935,0.551925,0.759796
+delivery_complete,over_0h_to_30d_after_delivery_complete,delayed_seller_category_flag,84613,921,1.088485,2,0.428266,0.217155,0.551925,0.393451

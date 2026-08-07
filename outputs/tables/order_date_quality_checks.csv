@@ -1,0 +1,9 @@
+﻿check_name,eligible_rows,issue_rows,issue_rate_pct,interpretation
+delivered_status_missing_delivery_date,96478,8,0.0083,배송 완료 상태이지만 고객 배송 완료일이 없는 주문
+non_delivered_status_with_delivery_date,2963,6,0.2025,배송 완료 상태가 아니지만 고객 배송 완료일이 존재하는 주문
+approved_before_purchase,99281,0,0.0,결제 승인일이 주문일보다 빠른 주문
+carrier_before_purchase,97658,166,0.17,물류사 인계일이 주문일보다 빠른 주문
+delivery_before_purchase,96476,0,0.0,고객 배송 완료일이 주문일보다 빠른 주문
+delivery_before_carrier,96475,23,0.0238,고객 배송 완료일이 물류사 인계일보다 빠른 주문
+estimated_delivery_before_purchase,99441,0,0.0,예상 배송 완료일이 주문일보다 빠른 주문
+delivered_after_estimated_date,96476,7827,8.1129,예상 배송일보다 실제 배송이 늦은 주문

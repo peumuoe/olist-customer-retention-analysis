@@ -1,0 +1,9 @@
+﻿metric,value,interpretation
+TP,19.0,selected and repurchased
+FP,1717.0,selected but did not repurchase
+FN,89.0,not selected but repurchased
+TN,15530.0,not selected and did not repurchase
+precision,0.010944700460829493,share of selected customers who repurchased
+recall,0.17592592592592593,share of repurchasers captured
+false_discovery_rate,0.9890552995391705,share of selected without observed repurchase
+specificity,0.9004464544558474,share of non-repurchasers not selected

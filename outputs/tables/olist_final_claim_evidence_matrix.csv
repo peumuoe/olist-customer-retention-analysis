@@ -1,0 +1,14 @@
+﻿claim_id,claim,evidence_level,source_table,allowed_wording_scope,prohibited_interpretation,source_exists
+C01,Olist official 30d repeat rate is 1.5823%,L1_audited_descriptive,retention_window_summary.csv,level diagnosis,cause attribution,True
+C02,Operational >24h-to-30d target rate is 0.616558%,L1_audited_descriptive,olist_asof_crm_targeting_flag_evaluation.csv,ML/CRM target definition,substitute for official KPI,True
+C03,External observed rates are higher,L1_non_comparable,external_retention_comparison.csv,directional benchmark,causal inferiority of Olist,True
+C04,Frozen logistic top10 Lift is 1.758753,L2_independent_predictive,olist_ml_test_lift_recall.csv,candidate ranking support,campaign uplift or individual certainty,True
+C05,Q3/Q4 within-band top10 is a pilot compromise,L2_predictive_diagnostic,olist_crm_capacity_frontier.csv,historical recruitment design,profit-optimal threshold,True
+C06,"Historical pilot candidate count is 4,667",L2_design_dry_run,olist_final_crm_population_summary.csv,allocation rehearsal,current contactable audience,True
+C07,Current live authorized count is zero,L2_design_dry_run,olist_final_crm_population_summary.csv,current project execution decision,claim that campaign launched,True
+C08,Current decision is DO_NOT_LAUNCH,L2_decision_design,olist_final_crm_decision_card.csv,current project state,permanent rejection of the hypothesis,True
+C09,Business proposal is a conditional randomized pilot,L2_decision_design,olist_final_crm_decision_card.csv,proposal after organizational gates,proven CRM policy,True
+C10,CRM incremental effect remains unknown,L3_required_not_observed,olist_crm_experiment_protocol.csv,explicit evidence boundary,expected uplift or ROI,True
+C11,Synthetic scenarios validate analysis code only,L0_pipeline_only,olist_crm_synthetic_scenario_summary.csv,pipeline rehearsal,observed business performance,True
+C12,Analysis can close under the fixed data scope,project_exit_audit,olist_project_completion_checklist.csv,portfolio handoff,claim that real campaign validation completed,True
+C13,Imbalance treatment does not justify final model replacement,L2_research_appendix_posthoc,olist_imbalance_diagnostic_conclusion.csv,diagnosis of limited signal and probability distortion,claim of proven superior model,True

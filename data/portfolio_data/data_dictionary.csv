@@ -1,0 +1,97 @@
+﻿dataset,grain,column_name,pandas_dtype,nullable,description_ko,source_lineage,public_release_class
+fact_retention.csv,지표 정의 × 관찰기간 1행,metric_type,str,False,재구매 지표 정의 구분,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,metric_role,str,False,지표의 의사결정 사용 목적,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,window_days,int64,False,첫 관찰 구매 이후 결과 관찰일수,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,observation_cutoff,str,False,observation cutoff,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,eligible_first_purchase_cutoff,object,True,eligible first purchase cutoff,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,eligible_customers,int64,False,해당 결과창을 완전히 관찰할 수 있는 고객 수,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,repeat_customers,int64,False,정의된 결과창 안에서 재구매한 고객 수,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,non_repeat_customer_count,int64,False,non repeat customer count,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,retention_rate_pct,float64,False,적격 고객 중 재구매 고객 비율(%),retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_retention.csv,지표 정의 × 관찰기간 1행,definition_note,str,False,definition note,retention_window_summary.csv + olist_repurchase_survival_summary.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,platform,str,False,비교 데이터 플랫폼,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,window_days,int64,False,첫 관찰 구매 이후 결과 관찰일수,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,eligible_customers,float64,True,해당 결과창을 완전히 관찰할 수 있는 고객 수,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,repeat_customers,float64,True,정의된 결과창 안에서 재구매한 고객 수,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,retention_rate_pct,float64,True,적격 고객 중 재구매 고객 비율(%),external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,comparison_role,str,False,외부 비교의 허용 수준,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,causal_interpretation_allowed,bool,False,causal interpretation allowed,external_retention_comparison.csv,aggregate_public_portfolio
+fact_external_benchmark.csv,플랫폼 × 관찰기간 1행,comparison_note,str,False,comparison note,external_retention_comparison.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,segment_dimension,str,False,고객군을 구성한 변수,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,segment_value,str,False,고객군 값,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,feature_availability,str,False,feature availability,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,eligible_customer_count,int64,False,eligible customer count,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,repeat_customer_count,int64,False,repeat customer count,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,retention_rate_pct,float64,False,적격 고객 중 재구매 고객 비율(%),olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,retention_rate_ci95_low_pct,float64,False,retention rate ci95 low pct,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,retention_rate_ci95_high_pct,float64,False,retention rate ci95 high pct,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,gap_vs_overall_pct_point,float64,False,gap vs overall pct point,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,customer_share_pct,float64,False,customer share pct,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,median_first_payment_value,float64,False,median first payment value,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,actionability_raw_1_to_5,int64,False,actionability raw 1 to 5,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,balanced_priority_score,float64,False,규모·격차·가치·개입가능성 기반 전문가 판단 점수,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,balanced_priority_rank,int64,False,균형형 우선순위 순위,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,rank_robustness,str,False,rank robustness,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_segment_priority.csv,고객군 차원 × 고객군 값 1행,interpretation_limit,str,False,interpretation limit,olist_improvement_opportunity_priority.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,model_name,str,False,예측모델 이름,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,top_fraction,float64,False,점수 상위 선택 비율,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,selected_customer_count,int64,False,selected customer count,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,captured_positive_count,int64,False,captured positive count,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,recall_at_k_pct,float64,False,전체 양성 중 선택군이 포착한 비율(%),olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,positive_rate_at_k_pct,float64,False,positive rate at k pct,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,lift_at_k,float64,False,선택군 양성률을 전체 양성률로 나눈 값,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,pr_auc,float64,False,pr auc,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,roc_auc,float64,False,roc auc,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,brier_score,float64,False,brier score,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,log_loss,float64,False,log loss,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,mean_predicted_probability_pct,float64,False,mean predicted probability pct,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,observed_positive_rate_pct,float64,False,observed positive rate pct,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,evaluation_scope,str,False,evaluation scope,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,allowed_use,str,False,allowed use,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_model_performance.csv,모델 × 상위 선택비율 1행,prohibited_use,str,False,prohibited use,olist_ml_test_model_summary.csv + olist_ml_test_lift_recall.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,scope,str,False,scope,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,selected_fraction,float64,False,CRM 발송 후보로 선택하는 비율,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,eligible_customer_count,int64,False,eligible customer count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,total_positive_count,int64,False,total positive count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,selected_customer_count,int64,False,selected customer count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,captured_positive_count,int64,False,captured positive count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,precision_pct,float64,False,precision pct,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,recall_pct,float64,False,recall pct,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,lift,float64,False,lift,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,contacts_per_observed_repurchase,float64,True,선택 고객 수/과거 관찰 재구매자 수; 증분구매 비용이 아님,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,marginal_tranche_customer_count,int64,False,marginal tranche customer count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,marginal_tranche_positive_count,int64,False,marginal tranche positive count,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,marginal_tranche_positive_rate_pct,float64,False,marginal tranche positive rate pct,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,observed_not_incremental,bool,False,observed not incremental,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_crm_capacity.csv,평가범위 × 선택비율 1행,interpretation_note,str,False,interpretation note,olist_crm_capacity_frontier.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,action_id,str,False,의사결정 Action Item 식별자,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,action,str,False,action,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,decision_status,str,False,현재 실행·보류·금지 상태,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,business_impact_1_to_5,int64,False,business impact 1 to 5,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,evidence_strength_1_to_5,int64,False,evidence strength 1 to 5,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,urgency_1_to_5,int64,False,urgency 1 to 5,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,effort_1_to_5,int64,False,effort 1 to 5,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,risk_1_to_5,int64,False,risk 1 to 5,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,reason,str,False,reason,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,owner,str,False,owner,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,required_resource,str,False,required resource,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,priority_score,float64,False,Action Item 전문가 판단 우선순위 점수,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_action_priority.csv,Action Item 1행,decision_order,int64,False,decision order,olist_decision_action_priority.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,risk_id,str,False,CRM 부작용·리스크 식별자,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,side_effect_or_risk,str,False,side effect or risk,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,leading_indicator,str,False,leading indicator,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,guardrail_or_threshold,str,False,확대 제한에 사용할 보호지표 또는 조직 사전 기준,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,mitigation,str,False,mitigation,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_crm_risk.csv,리스크 1행,decision_trigger,str,False,decision trigger,olist_crm_risk_register.csv,aggregate_public_portfolio
+fact_launch_gate.csv,런치 게이트 1행,gate,str,False,CRM 런치 조건 식별자,olist_crm_launch_gate_checklist.csv,aggregate_public_portfolio
+fact_launch_gate.csv,런치 게이트 1행,requirement,str,False,requirement,olist_crm_launch_gate_checklist.csv,aggregate_public_portfolio
+fact_launch_gate.csv,런치 게이트 1행,owner,str,False,owner,olist_crm_launch_gate_checklist.csv,aggregate_public_portfolio
+fact_launch_gate.csv,런치 게이트 1행,status,str,False,런치 조건 준비 상태,olist_crm_launch_gate_checklist.csv,aggregate_public_portfolio
+fact_launch_gate.csv,런치 게이트 1행,current_evidence,str,False,current evidence,olist_crm_launch_gate_checklist.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,claim_id,str,False,최종 보고 주장 식별자,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,claim,str,False,claim,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,evidence_level,str,False,주장을 지지하는 근거 수준,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,source_table,str,False,주장의 직접 원천 산출물,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,allowed_wording_scope,str,False,allowed wording scope,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,prohibited_interpretation,str,False,prohibited interpretation,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio
+fact_claim_evidence.csv,최종 주장 1행,source_exists,bool,False,source exists,olist_final_claim_evidence_matrix.csv,aggregate_public_portfolio

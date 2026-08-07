@@ -1,0 +1,11 @@
+check_name,actual_value,expected_value,passed
+customer_plan_row_count,4667,4667,True
+unique_customer_count,4667,4667,True
+treatment_count,2333,2333,True
+control_count,2334,2334,True
+treatment_contact_count_rule_violations,0,0,True
+control_contact_count_rule_violations,0,0,True
+benefit_non_none_count,0,0,True
+actual_send_authorized_count,0,0,True
+tracking_required_field_count,24,24,True
+ready_launch_gate_count,2,2,True

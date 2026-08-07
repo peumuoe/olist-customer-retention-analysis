@@ -1,0 +1,10 @@
+﻿gate,requirement,owner,status,current_evidence
+legal_and_consent,approved marketing-consent basis and current suppression list,business/legal,blocked,not available in Olist data
+channel,one owned channel selected and frozen for both protocol and cost tracking,CRM owner,blocked,channel not selected
+message,non-discount discovery copy and category modules approved,CRM/content,pending,semantic treatment defined; final copy absent
+frequency,30-day one-contact cap implemented and tested,CRM engineering,blocked,no CRM platform connection
+randomization,assignment table immutable and customer uniqueness verified,data science,ready,dry-run checks passed
+instrumentation,"assignment, send, delivery, consent, guardrail, order and cost joins tested",data engineering,blocked,future CRM data required
+sample_size,pilot purpose and stopping rule approved,experiment owner,pending,available sample detects only large effects
+analysis,ITT analysis code and 30-day maturity rule frozen before launch,data science,ready,script 32 and 12 quality checks passed
+operations,transactional messages remain identical across arms,CRM operations,pending,must be verified in live system

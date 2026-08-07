@@ -1,0 +1,9 @@
+check_name,actual_value,expected_value,passed
+action_count,7,7,True
+risk_count,9,9,True
+decision_rule_count,4,4,True
+simulation_evidence_count,5,5,True
+do_now_count,1,1,True
+do_not_do_count,1,1,True
+all_risks_have_mitigation,9,9,True
+all_rules_have_data_quality_condition,4,4,True

@@ -1,0 +1,13 @@
+check_name,actual_value,expected_value,passed
+synthetic_flag_all_true,14001,14001,True
+scenario_count,3,3,True
+rows_per_scenario,4667,4667,True
+customer_uniqueness_within_scenario,4667,4667,True
+all_outcomes_matured,14001,14001,True
+null_exact_event_difference,0,0,True
+moderate_ci_includes_zero,True,True,True
+large_ci_excludes_zero,True,True,True
+primary_result_count,3,3,True
+result_synthetic_flag_all_true,12,12,True
+maturity_probe_denominator,4567,4567,True
+delivery_failure_kept_in_itt,4667,4667,True

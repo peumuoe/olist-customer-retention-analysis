@@ -1,0 +1,2 @@
+fold_count,folds_pr_auc_above_prevalence,folds_lift10_above_1,mean_pr_auc_vs_prevalence_ratio,min_pr_auc_vs_prevalence_ratio,max_pr_auc_vs_prevalence_ratio,mean_lift_at_10pct,min_lift_at_10pct,max_lift_at_10pct,positive_rate_min_pct,positive_rate_max_pct,stability_conclusion
+4,4,4,2.399926,1.434475,5.125037,1.912695,1.604445,2.104616,0.476337,0.729871,positive_all_folds

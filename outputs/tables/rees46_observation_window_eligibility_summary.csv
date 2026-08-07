@@ -1,0 +1,4 @@
+﻿window_days,eligible_customer_count,eligible_customer_rate_pct,ineligible_right_censored_count,denominator_rule
+30,347118,49.768162,350352,첫 관찰 구매 후 데이터 종료까지 30일 이상 관찰 가능
+60,14064,2.016431,683406,첫 관찰 구매 후 데이터 종료까지 60일 이상 관찰 가능
+90,0,0.0,697470,첫 관찰 구매 후 데이터 종료까지 90일 이상 관찰 가능

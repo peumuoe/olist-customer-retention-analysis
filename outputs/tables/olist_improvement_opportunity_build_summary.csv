@@ -1,0 +1,16 @@
+﻿check_name,actual,expected,status
+eligible_customer_rows,86772,86772,PASS
+duplicate_customers,0,0,PASS
+candidate_key_duplicates,0,0,PASS
+all_candidates_min_500,True,True,PASS
+all_candidates_below_overall,True,True,PASS
+rubric_dimensions,9,9,PASS
+missing_actionability,0,0,PASS
+component_scores_in_0_1,True,True,PASS
+scenario_count,3,3,PASS
+scenario_rows_reconcile,117,117,PASS
+all_scenario_weights_sum_1,True,True,PASS
+balanced_top10,10,10,PASS
+top10_overlap_rows,55,55,PASS
+overlap_in_0_100,True,True,PASS
+valid_first_payment_counts,True,True,PASS

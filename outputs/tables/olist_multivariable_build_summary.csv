@@ -1,0 +1,13 @@
+﻿check_name,actual,expected,status
+eligible_rows,86772,86772,PASS
+positive_rows,1373,1373,PASS
+duplicate_customers,0,0,PASS
+base_models,2,2,PASS
+model_fits_including_sensitivity,5,5,PASS
+all_model_fits_converged,True,True,PASS
+finite_coefficients,True,True,PASS
+positive_odds_ratios,True,True,PASS
+adjusted_rates_in_0_100,True,True,PASS
+experience_features_absent_from_order_model,0,0,PASS
+sensitivity_lambdas,3,3,PASS
+sensitivity_finite,True,True,PASS

@@ -1,0 +1,10 @@
+risk_id,side_effect_or_risk,leading_indicator,guardrail_or_threshold,mitigation,decision_trigger
+customer_fatigue,추가 메시지가 피로·수신거부·불만을 증가,unsubscribe and complaint rate,사전 사업 비열등 한계 필요,30일 1회 빈도 제한; 거래성 메시지 동일 유지,한계 초과 시 중단
+natural_purchase_cannibalization,원래 구매할 고객에게 불필요한 비용·혜택 사용,ITT incremental repeat and contribution,incremental contribution >= 0,첫 실험 무할인; 대조군 유지,공헌이익 음수면 확대 금지
+selection_concentration,SP·bed_bath_table에 대상이 과도하게 집중,group representation ratio,0.5~2.0 운영 경계,가치구간 층화; 구성비 모니터링,2.0 초과 시 모집정책 재검토
+false_negative_low_power,실제 중간 효과가 있어도 유의하지 않음,effect CI width and event counts,MDE 약 상대 70.9%,효과크기와 구간 보고; 비유의=무효과 금지,확증 판단 보류
+delivery_timing_conflict,상품 수령 전 교차판매 메시지가 고객경험 악화,"cancellation, complaint, delivery status",사업 임계값 사전 정의,발송 전 주문 취소 억제; 24~48h 가설 검토,Guardrail 악화 시 시점 변경
+randomization_contamination,대조군에 다른 실험성 메시지가 노출,contact history by arm,대조군 실험성 연락 0회,실험 ID·빈도 제한·캠페인 제외목록,오염률 보고 및 실험 무효 검토
+tracking_failure,배정·발송·주문·비용 연결 누락,join rate and missing required fields,필수 필드 완전성 사전 기준,런치 전 end-to-end 테스트,기준 미달 시 런치 금지
+margin_erosion,할인 또는 비용이 재구매 매출보다 큼,incremental contribution after cost,0 이상,V1 무할인; 비용 별도 기록,음수면 중단
+model_drift_or_miscalibration,과거 모델 순위가 현재 고객에서 재현되지 않음,"Lift@10, calibration, PSI",Lift<1 중단; PSI 0.10/0.25 점검,파일럿 한정 사용,Lift<1이면 점수 타기팅 중단

@@ -1,0 +1,10 @@
+prediction_point,rule_order,segment_name,selection_rule,available_inputs_only,future_behavior_used_as_input
+order_time,1,seller_category_high_value_candidate,"primary_category in {watches_gifts, auto, toys} AND order_value_band = Q4_high",True,False
+order_time,2,seller_category_standard_value_candidate,"primary_category in {watches_gifts, auto, toys} AND order_value_band != Q4_high",True,False
+order_time,3,other_category_high_value_candidate,"primary_category not in {watches_gifts, auto, toys} AND order_value_band = Q4_high",True,False
+order_time,4,general_order_time_candidate,remaining order-time eligible customers,True,False
+delivery_complete,1,delayed_seller_category_candidate,"delivery is late AND primary_category in {watches_gifts, auto, toys}",True,False
+delivery_complete,2,delayed_other_category_candidate,"delivery is late AND primary_category not in {watches_gifts, auto, toys}",True,False
+delivery_complete,3,ontime_seller_category_candidate,"delivery on time or early AND primary_category in {watches_gifts, auto, toys}",True,False
+delivery_complete,4,ontime_other_category_candidate,"delivery on time or early AND primary_category not in {watches_gifts, auto, toys}",True,False
+delivery_complete,5,delivery_status_unknown_candidate,delivery experience unknown,True,False

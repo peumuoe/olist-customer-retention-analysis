@@ -1,0 +1,6 @@
+﻿column_name,is_required
+t_dat,True
+customer_id,True
+article_id,True
+price,True
+sales_channel_id,True

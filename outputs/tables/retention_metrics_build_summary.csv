@@ -1,0 +1,10 @@
+﻿check_name,value
+retention_order_rows,96478
+customer_metric_rows,93358
+unique_customer_ids,93358
+duplicate_customer_id_rows,0
+null_first_purchase_rows,0
+null_second_purchase_rows,90557
+all_time_repeat_customers,2801
+observation_cutoff,2018-08-29 15:00:37
+eligible_counts_non_increasing,True

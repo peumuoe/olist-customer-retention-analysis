@@ -1,0 +1,11 @@
+﻿check_name,actual_value,expected_value,passed
+eligible_rows,86772,86772,True
+original_positive_count,535,535,True
+candidate_count,8,8,True
+candidate_result_rows,16,16,True
+validation_original_rows_unchanged,1,1,True
+baseline_validation_positive_count,44,44,True
+all_probabilities_finite,1,1,True
+posthoc_test_rows,4,4,True
+rank_stability_rows,3,3,True
+final_model_change_authorized,0,0,True

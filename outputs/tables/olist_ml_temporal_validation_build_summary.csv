@@ -1,0 +1,6 @@
+check_name,actual_value,expected_value,passed
+eligible_row_count,86772,86772,True
+rolling_fold_count,4,4,True
+folds_with_positives,4,4,True
+bootstrap_iteration_count,2000,2000,True
+bootstrap_metric_count,5,5,True

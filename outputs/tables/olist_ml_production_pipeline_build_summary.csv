@@ -1,0 +1,9 @@
+check_name,actual_value,expected_value,passed
+source_row_count,93358,93358,True
+mature_training_row_count,86772,86772,True
+training_positive_count,535,535,True
+score_row_count,93358,93358,True
+unique_customer_count,93358,93358,True
+score_range_violations,0,0,True
+missing_scores,0,0,True
+recommended_value_band_violations,0,0,True

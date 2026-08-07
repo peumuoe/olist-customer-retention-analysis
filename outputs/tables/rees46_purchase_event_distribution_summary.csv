@@ -1,0 +1,14 @@
+﻿metric,value
+single_purchase_row_events,1222293.0
+multi_purchase_row_events,180465.0
+multi_purchase_row_event_rate_pct,12.865013
+single_product_events,1288671.0
+multi_product_events,114087.0
+multi_product_event_rate_pct,8.133049
+recorded_item_price_sum_min,0.77
+recorded_item_price_sum_p25,88.81
+recorded_item_price_sum_median,190.46
+recorded_item_price_sum_p75,434.5
+recorded_item_price_sum_p95,1309.69
+recorded_item_price_sum_max,82682.32
+recorded_item_price_sum_mean,360.11

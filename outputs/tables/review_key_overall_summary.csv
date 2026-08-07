@@ -1,0 +1,7 @@
+﻿check_name,value
+total_review_rows,99224
+unique_review_ids,98410
+duplicated_review_id_count,789
+review_ids_linked_to_multiple_orders,789
+duplicate_review_id_order_rows,0
+orders_with_multiple_review_rows,547

@@ -1,0 +1,38 @@
+variable,earliest_availability,variable_role,allowed_as_order_time_input,allowed_as_delivery_complete_input,reason
+order_id,order_time,identifier_not_model_input,False,False,행 연결용 식별자이며 일반화 가능한 설명변수가 아님
+customer_id,order_time,identifier_not_model_input,False,False,행 연결용 식별자이며 일반화 가능한 설명변수가 아님
+customer_unique_id,order_time,identifier_not_model_input,False,False,행 연결용 식별자이며 일반화 가능한 설명변수가 아님
+order_purchase_timestamp,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+order_delivered_customer_date,delivery_complete,candidate_input,False,True,실제 배송 완료 이후에만 확정되는 정보
+order_estimated_delivery_date,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+customer_state,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+customer_city,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+item_count,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+product_count,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+seller_count,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+category_count,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+item_price_sum,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+freight_value_sum,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+primary_category,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+payment_value_sum,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+payment_installments_max,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+payment_type_count,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+primary_payment_type,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+review_count,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음
+review_score_mean,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음
+review_score_min,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음
+review_comment_present,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음
+first_purchase_timestamp,dataset_qa,qa_not_model_input,False,False,마트 구축 검증용 변수
+eligible_30d,future_observation,target_or_eligibility,False,False,예측 기준점 이후의 결과 또는 충분한 관찰기간 조건
+repeat_within_30d,future_observation,target_or_eligibility,False,False,예측 기준점 이후의 결과 또는 충분한 관찰기간 조건
+first_timestamp_match_flag,dataset_qa,qa_not_model_input,False,False,마트 구축 검증용 변수
+delivery_days,delivery_complete,candidate_input,False,True,실제 배송 완료 이후에만 확정되는 정보
+delivery_delay_days,delivery_complete,candidate_input,False,True,실제 배송 완료 이후에만 확정되는 정보
+freight_share,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+review_present_flag,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음
+order_value_band,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+item_count_group,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+seller_count_group,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+installment_group,order_time,candidate_input,True,True,첫 주문 확정 시 생성되거나 계산 가능한 정보
+delivery_experience_group,delivery_complete,candidate_input,False,True,실제 배송 완료 이후에만 확정되는 정보
+review_score_group,review_event_or_later,post_delivery_input,False,False,배송 완료 시점에는 리뷰가 아직 작성되지 않았을 수 있음

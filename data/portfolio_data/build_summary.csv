@@ -1,0 +1,10 @@
+﻿check_name,actual_value,expected_value,passed
+public_fact_table_count,9,9,True
+dictionary_dataset_count,9,9,True
+dictionary_column_rows,96,96,True
+customer_or_order_identifier_columns,0,0,True
+manifest_row_count,9,9,True
+empty_fact_tables,0,0,True
+external_causal_allowed_true,0,0,True
+capacity_incremental_flag_false,0,0,True
+dictionary_file_exists,1,1,True

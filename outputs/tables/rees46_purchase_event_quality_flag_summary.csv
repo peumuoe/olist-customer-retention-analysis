@@ -1,0 +1,6 @@
+﻿flag_name,event_count,event_rate_pct,treatment
+cross_month_file_flag,16,0.001141,기본 마트에 유지; 후속 민감도·세그먼트 분석에서 구분
+session_over_30m_flag,6172,0.43999,기본 마트에 유지; 후속 민감도·세그먼트 분석에서 구분
+session_over_24h_flag,68,0.004848,기본 마트에 유지; 후속 민감도·세그먼트 분석에서 구분
+contains_missing_category_code,363177,25.890211,기본 마트에 유지; 후속 민감도·세그먼트 분석에서 구분
+contains_missing_brand,118955,8.48008,기본 마트에 유지; 후속 민감도·세그먼트 분석에서 구분

@@ -1,0 +1,6 @@
+metric,point_estimate,bootstrap_mean,ci95_low,ci95_high,bootstrap_iterations
+pr_auc,0.007821,0.008255,0.005896,0.011392,2000
+roc_auc,0.542233,0.543166,0.487327,0.597433,2000
+lift_at_10pct,1.758753,1.752811,1.063476,2.49928,2000
+recall_at_10pct,0.175926,0.175332,0.106378,0.25,2000
+top10_captured_positive_count,19.0,18.837,11.0,28.0,2000

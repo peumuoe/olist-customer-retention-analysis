@@ -1,0 +1,8 @@
+action_id,action,decision_status,business_impact_1_to_5,evidence_strength_1_to_5,urgency_1_to_5,effort_1_to_5,risk_1_to_5,reason,owner,required_resource,priority_score,decision_order
+A1,30일 공식 KPI와 24시간 제외 운영 타깃 분리 운영,즉시 실행,4,5,5,1,1,사업 진단과 CRM 모델 타깃 혼용 방지,analytics/product,KPI dictionary and dashboard definition,4.7,1
+A3,CRM 배정·발송·도달·Guardrail·주문·비용 계측 연결,실행 전 필수,5,4,5,4,2,효과·고객경험·수익성을 동일 실험 단위로 판단하기 위한 전제,data engineering/CRM/finance,experiment_id and customer-level event contract,4.2,2
+A2,Q3·Q4 모델 상위군 대상 1:1 무작위 CRM 파일럿,설계 완료·실행 조건부,4,3,4,3,3,제한적 예측 신호를 캠페인 인과효과와 분리해 검증,CRM/product/analytics,"consent, channel, frequency cap, experiment logging",3.5,3
+A4,할인 없는 탐색 메시지 1회로 첫 처치 단순화,권고 실험 처치,3,2,3,2,2,메시지 효과와 가격 인센티브 효과의 혼합 방지,CRM/content,one frozen template and one consented channel,3.0,4
+A5,할인·쿠폰 제공 실험,후순위,3,1,2,3,4,마진 훼손·자연 구매 잠식·처치 해석 혼합 위험,CRM/finance,margin and incentive cost data,2.1999999999999997,5
+A7,추가 복잡 모델을 최종 운영모델로 교체,연구 부록,2,2,1,4,3,새로운 미사용 검증데이터 없이 우월성 확정 불가,data science,current data only; no fair new holdout,1.9000000000000001,6
+A6,전 고객 대상 모델 자동 타기팅 확대,실행 금지,3,1,1,4,5,"Recall 17.59%, Q1·Q2 Lift 약 0.95, 지역·카테고리 편중",CRM/data science,not recommended under current evidence,1.75,7

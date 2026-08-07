@@ -1,0 +1,9 @@
+check_name,actual_value,expected_or_limit,passed
+candidate_count,4667.0,4667.0,True
+unique_customer_count,4667.0,4667.0,True
+arm_count_difference,1.0,1.0,True
+non_q3_q4_candidates,0.0,0.0,True
+missing_assignments,0.0,0.0,True
+score_smd_abs_below_0_10,0.027990459119800824,0.1,True
+max_categorical_share_diff_below_0_05,0.014882221514568195,0.05,True
+primary_kpi_count,1.0,1.0,True

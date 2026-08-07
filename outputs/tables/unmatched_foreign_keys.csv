@@ -1,0 +1,3 @@
+﻿relationship,unmatched_key,row_count
+products.product_category_name -> category_translation.product_category_name,portateis_cozinha_e_preparadores_de_alimentos,10
+products.product_category_name -> category_translation.product_category_name,pc_gamer,3

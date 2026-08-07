@@ -1,0 +1,4 @@
+﻿selected_candidate,evaluation_split,spearman_score_rank_correlation,top10_intersection_count,top10_union_count,top10_jaccard_overlap
+oversample_2pct,validation_select,0.9311126016036269,673,1063,0.6331138287864534
+oversample_2pct,calibration,0.9311075681529694,684,1052,0.6501901140684411
+oversample_2pct,test,0.9411586783453029,1370,2102,0.6517602283539486

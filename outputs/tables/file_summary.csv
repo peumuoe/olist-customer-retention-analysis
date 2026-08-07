@@ -1,0 +1,10 @@
+﻿file_name,row_count,column_count,duplicated_row_count,total_missing_count
+olist_customers_dataset.csv,99441,5,0,0
+olist_geolocation_dataset.csv,1000163,5,261831,0
+olist_order_items_dataset.csv,112650,7,0,0
+olist_order_payments_dataset.csv,103886,5,0,0
+olist_order_reviews_dataset.csv,99224,7,0,145903
+olist_orders_dataset.csv,99441,8,0,4908
+olist_products_dataset.csv,32951,9,0,2448
+olist_sellers_dataset.csv,3095,4,0,0
+product_category_name_translation.csv,71,2,0,0

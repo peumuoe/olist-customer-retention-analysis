@@ -1,0 +1,11 @@
+﻿check_name,actual_value,expected_value,passed
+historical_candidate_count,4667,4667,True
+dry_run_assignment_count,4667,4667,True
+treatment_plus_control,4667,4667,True
+live_authorized_count,0,0,True
+playbook_row_count,6,6,True
+discount_treatment_rows,0,0,True
+primary_kpi_missing_rows,0,0,True
+causal_warning_missing_rows,0,0,True
+blocked_gate_count,4,4,True
+current_decision_do_not_launch,1,1,True

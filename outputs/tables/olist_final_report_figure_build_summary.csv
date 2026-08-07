@@ -1,0 +1,7 @@
+figure_name,exists,file_size_bytes,minimum_size_bytes,passed
+01_olist_retention_curve.png,True,75419,20000,True
+02_external_30d_comparison.png,True,55624,20000,True
+03_opportunity_priority_map.png,True,108465,20000,True
+04_model_lift_recall.png,True,98096,20000,True
+05_value_band_lift.png,True,57371,20000,True
+06_experiment_power.png,True,66642,20000,True

@@ -1,0 +1,13 @@
+first_category,followup_day_band,customer_count,same_category_count,same_product_count,category_customer_count,category_customer_share_pct
+auto,over_1_to_3_days,3,1,1,18,16.666667
+auto,over_3_to_7_days,1,1,0,18,5.555556
+auto,over_7_to_14_days,4,1,0,18,22.222222
+auto,over_14_to_30_days,10,7,2,18,55.555556
+toys,over_1_to_3_days,3,3,1,18,16.666667
+toys,over_3_to_7_days,6,2,0,18,33.333333
+toys,over_7_to_14_days,2,1,1,18,11.111111
+toys,over_14_to_30_days,7,3,0,18,38.888889
+watches_gifts,over_1_to_3_days,7,6,2,37,18.918919
+watches_gifts,over_3_to_7_days,8,6,4,37,21.621622
+watches_gifts,over_7_to_14_days,9,5,2,37,24.324324
+watches_gifts,over_14_to_30_days,13,9,2,37,35.135135

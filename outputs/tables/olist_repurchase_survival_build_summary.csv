@@ -1,0 +1,10 @@
+﻿check_name,value,passed
+input_order_rows,96478,True
+unique_customers,93358,True
+observation_cutoff,2018-08-29 15:00:37,True
+official_events,2801,True
+operational_over24h_events,1948,True
+negative_duration_rows,0,True
+official_30d_fixed_rate_matches_kpi,1.5823076568478311,True
+survival_probability_monotonic,1,True
+operational_below_official_30d,0.6136487926776457,True

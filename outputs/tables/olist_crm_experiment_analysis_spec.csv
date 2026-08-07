@@ -1,0 +1,13 @@
+analysis_item,pre_registered_rule
+data_status,real campaign results required; current outputs are synthetic validation only
+primary_estimand,ITT risk difference in delivered repeat-order customer rate
+population,all randomized customers with 30 complete outcome days
+treatment_handling,retain failed delivery and unopened messages in assigned treatment arm
+primary_interval,Newcombe-Wilson 95% confidence interval for independent proportions
+relative_measure,risk ratio with log-scale 95% confidence interval
+primary_test,two-sided Fisher exact test at alpha 0.05
+continuous_interval,unadjusted mean difference normal 95% interval; bootstrap planned for real skewed values
+missing_outcome_rule,"not-yet-mature customers excluded until day 30; unexplained missingness reported, not silently dropped"
+subgroup_rule,Q3/Q4 and score-quintile effects are exploratory with interaction intervals
+peeking_rule,no repeated early success declaration without pre-specified sequential correction
+decision_rule,"report effect size, interval, event counts, guardrails and cost; p-value alone is insufficient"

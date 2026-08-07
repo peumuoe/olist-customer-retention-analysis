@@ -1,0 +1,18 @@
+﻿check_name,passed,interpretation
+report_date_current,True,report uses current project date
+official_30d_consistent,True,official KPI matches registry
+operational_30d_consistent,True,operational target matches registry
+candidate_count_consistent,True,historical candidate count matches
+live_authorized_zero,True,no live sends claimed
+current_decision_consistent,True,current execution decision is explicit
+conditional_proposal_consistent,True,conditional proposal separated
+external_causal_limit,True,external comparison limit included
+model_causal_limit,True,prediction and incrementality separated
+synthetic_limit,True,synthetic evidence boundary included
+data_scope_exit,True,analysis exit is explicit
+all_claim_sources_exist,True,every claim has an available artifact
+all_workstreams_closed,True,every workstream is complete or explicitly closed
+no_forbidden_claims,True,no unsupported success or revenue claim
+imbalance_no_model_replacement,True,imbalance research does not overwrite final model
+audit_and_decision_logs_exist,True,two core logs exist
+insight_log_exists,True,contextual insights exist

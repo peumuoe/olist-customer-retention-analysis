@@ -1,0 +1,16 @@
+﻿check_name,value
+transaction_rows,31788324
+transaction_column_count,5
+unique_customers,1362281
+unique_articles_in_transactions,104547
+unique_sales_channels,2
+minimum_transaction_date,2018-09-20 00:00:00
+maximum_transaction_date,2020-09-22 00:00:00
+transaction_date_parse_failures,0
+unmatched_article_rows,0
+unmatched_unique_article_ids,0
+null_t_dat_rows,0
+null_customer_id_rows,0
+null_article_id_rows,0
+null_price_rows,0
+null_sales_channel_id_rows,0

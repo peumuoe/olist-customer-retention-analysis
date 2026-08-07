@@ -1,0 +1,4 @@
+﻿"file_name","purchase_rows","purchase_users","purchase_sessions","purchase_products","purchase_categories_non_null","purchase_brands_non_null","purchase_user_session_nulls","purchase_user_id_nulls","purchase_product_id_nulls","purchase_category_id_nulls","purchase_category_code_nulls","purchase_brand_nulls","purchase_price_nulls"
+"2019-Oct.csv","742849","347118","629560","42241","121","1983","0","0","0","0","173425","58305","0"
+"2019-Nov.csv","916939","441638","773214","52054","126","2486","0","0","0","0","234218","73362","0"
+"ALL","1659788","697470","1402758","68076","127","2713","0","0","0","0","407643","131667","0"

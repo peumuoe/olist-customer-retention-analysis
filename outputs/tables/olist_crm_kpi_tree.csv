@@ -1,0 +1,9 @@
+kpi_branch,kpi_name,kpi_role,definition,source,decision_use
+decision,incremental_30d_repeat_purchase,primary,treatment minus control delivered repeat-customer rate,orders,success estimate; report 95% CI
+commercial,observed_repeat_revenue_per_randomized_customer,secondary,repeat payment value / randomized customers,orders/payments,not future CLV
+commercial,incremental_contribution_after_contact_cost,guardrail,incremental contribution - contact - incentive cost,finance/CRM,must not be materially negative
+customer_experience,unsubscribe_rate,guardrail,unsubscribe customers / delivered customers,CRM,review any material increase
+customer_experience,complaint_rate,guardrail,complaint customers / delivered customers,CRM,review any material increase
+operations,delivery_rate,diagnostic,delivered messages / treatment-assigned customers,CRM,do not exclude failures from ITT
+engagement,click_rate,secondary,clicking customers / delivered customers,CRM,not a substitute for repeat purchase
+model,score_band_effect_heterogeneity,exploratory,treatment effect by predeclared score quintile,assignment/orders,hypothesis generation only

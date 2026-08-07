@@ -1,0 +1,24 @@
+design_item,pre_registered_definition
+experiment_id,OLIST_REPURCHASE_Q3Q4_MESSAGE_V1
+status,design_and_historical_allocation_rehearsal_only
+causal_question,Does one personalized discovery message increase >24h-to-30d repeat purchase versus no incremental message?
+hypothesis,The message increases 30-day repeat purchase; effectiveness is not assumed in advance.
+experimental_unit,customer_unique_id
+candidate_rule,Q3 or Q4_high AND within-value-band model-score top 10%
+runtime_eligibility,first order confirmed; contactable; marketing consent valid; not suppressed; order not cancelled at trigger
+randomization,1:1 stratified permuted assignment using value band x SP/other x bed_bath_table/other
+trigger_time,24 hours after first-order timestamp
+treatment,one personalized related-product/category discovery message; no discount
+control,no incremental experiment CRM message; normal transactional communication remains
+primary_kpi,customer-level delivered repeat purchase rate >24h and <=30d after first order
+effect_measure,intention-to-treat absolute percentage-point difference and relative lift with 95% CI
+primary_test,"two-sided difference in proportions, alpha=0.05"
+sensitivity_analysis,stratification-adjusted logistic regression with treatment indicator only plus predeclared strata
+secondary_kpi,time to repeat purchase; repeat-order payment value; message delivery and click rate
+guardrail_kpi,first-order cancellation; refund/return if available; unsubscribe/complaint; contribution margin
+outcome_maturity,an assigned customer enters final analysis only after 30 complete days of observation
+exposure_rule,analyze by assigned arm even if delivery fails or message is not opened (ITT)
+peeking_rule,do not stop or declare success from repeated daily significance checks
+exclusion_after_assignment,none except proven data corruption; operational failures remain in assigned arm
+multiple_testing,one primary treatment contrast and one primary KPI; secondary outcomes are exploratory
+interpretation_limit,model ranking performance and campaign incremental effect are separate quantities

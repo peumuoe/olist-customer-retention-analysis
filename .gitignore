@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local agent/editor state and credentials
+.agents/
+.codex/
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# Local/raw data: download separately and rebuild with src scripts
+data/raw/
+data/external/
+data/processed/
+
+# Keep the public aggregate BI mart
+!data/portfolio_data/
+!data/portfolio_data/**
+
+# Serialized models and local caches
+models/*.joblib
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# BI and OS temporary files
+~$*.pbix
+~$*.twb*
+.DS_Store
+Thumbs.db

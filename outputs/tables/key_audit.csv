@@ -1,0 +1,9 @@
+﻿table_name,key_type,key_columns,row_count,null_key_rows,duplicate_key_rows,unique_key_count,is_unique
+customers,primary_key,customer_id,99441,0,0,99441,True
+orders,primary_key,order_id,99441,0,0,99441,True
+products,primary_key,product_id,32951,0,0,32951,True
+sellers,primary_key,seller_id,3095,0,0,3095,True
+category_translation,primary_key,product_category_name,71,0,0,71,True
+order_items,composite_key,order_id + order_item_id,112650,0,0,112650,True
+payments,composite_key,order_id + payment_sequential,103886,0,0,103886,True
+reviews,candidate_key,review_id,99224,0,1603,98410,False

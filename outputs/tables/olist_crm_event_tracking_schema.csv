@@ -1,0 +1,29 @@
+event_domain,field_name,data_type,required_for_launch,purpose
+assignment,experiment_id,string,True,stable experiment identifier
+assignment,customer_unique_id,string,True,customer randomization unit
+assignment,experiment_arm,string,True,treatment or control
+assignment,assignment_timestamp,datetime_utc,True,time of immutable assignment
+assignment,randomization_stratum,string,True,pre-treatment stratum
+assignment,model_version,string,True,model used for eligibility
+assignment,repurchase_score,float,True,pre-treatment ranking score
+eligibility,consent_status_at_trigger,string,True,marketing consent snapshot
+eligibility,suppression_reason,string,True,null or predeclared reason
+send,message_id,string,True,unique send attempt identifier
+send,template_version,string,True,frozen treatment version
+send,content_strategy,string,True,content module selected before send
+send,channel,string,True,single frozen owned channel
+send,scheduled_timestamp,datetime_utc,True,planned trigger time
+send,sent_timestamp,datetime_utc,True,actual send time or null
+delivery,delivery_status,string,True,"delivered, bounced, failed"
+delivery,delivery_timestamp,datetime_utc,False,actual delivery time
+engagement,open_timestamp,datetime_utc,False,secondary engagement event
+engagement,click_timestamp,datetime_utc,False,secondary engagement event
+guardrail,unsubscribe_timestamp,datetime_utc,True,customer opt-out event
+guardrail,complaint_timestamp,datetime_utc,True,spam or complaint event
+outcome,repeat_order_id,string,True,delivered repeat order identifier
+outcome,repeat_order_purchase_timestamp,datetime_utc,True,outcome-window check
+outcome,repeat_order_delivered_flag,boolean,True,primary outcome status
+outcome,repeat_payment_value,decimal,False,observed secondary revenue
+cost,contact_cost,decimal,True,channel delivery cost
+cost,incentive_cost,decimal,True,zero for v1 no-discount treatment
+cost,contribution_margin,decimal,True,required for profit guardrail

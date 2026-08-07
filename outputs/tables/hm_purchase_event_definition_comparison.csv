@@ -1,0 +1,3 @@
+﻿purchase_event_definition,event_count,difference_from_customer_date,increase_rate_pct
+customer_id + t_dat,9080179,0,0.0
+customer_id + t_dat + sales_channel_id,9174457,94278,1.0383

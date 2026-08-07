@@ -1,0 +1,10 @@
+﻿check_name,actual,expected,status
+audit_rows,11,11,PASS
+unique_source_ids,11,11,PASS
+missing_source_url,0,0,PASS
+missing_metric_formula,0,0,PASS
+adopted_rows,9,9,PASS
+excluded_rows,2,2,PASS
+direct_comparison_rows,0,0,PASS
+visitor_metric_excluded,True,True,PASS
+values_between_0_and_100,True,True,PASS

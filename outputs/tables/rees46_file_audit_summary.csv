@@ -1,0 +1,3 @@
+﻿file_name,file_size_bytes,column_count,chunk_count,row_count,date_parse_failures,price_parse_failures,confirmed_duplicate_rows_lower_bound,duplicate_check_scope
+2019-Oct.csv,5668612855,9,43,42448764,0,0,30220,청크 내부 전수 + 인접 청크 경계; 비인접 청크 간은 미검증
+2019-Nov.csv,9006762395,9,68,67501979,0,0,100518,청크 내부 전수 + 인접 청크 경계; 비인접 청크 간은 미검증

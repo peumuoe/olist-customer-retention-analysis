@@ -1,0 +1,30 @@
+{
+  "target": "target_repeat_over_24h_within_30d",
+  "best_logistic_candidate": "C=0.01",
+  "best_xgboost_candidate": "depth2_sqrt_weight",
+  "numeric_features": [
+    "item_count",
+    "product_count",
+    "seller_count",
+    "category_count",
+    "item_price_sum",
+    "freight_value_sum",
+    "payment_value_sum",
+    "payment_installments_max",
+    "payment_type_count",
+    "freight_share",
+    "estimated_delivery_lead_days",
+    "purchase_hour",
+    "purchase_weekday",
+    "purchase_month"
+  ],
+  "categorical_features": [
+    "customer_state",
+    "primary_category",
+    "primary_payment_type",
+    "order_value_band",
+    "item_count_group",
+    "seller_count_group",
+    "installment_group"
+  ]
+}

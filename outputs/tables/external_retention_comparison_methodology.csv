@@ -1,0 +1,4 @@
+﻿dataset,customer_key,purchase_event_definition,primary_rate_rule,observation_scope,comparison_limit
+Olist,customer_unique_id,배송 완료 order_id 1개,N일 내 두 번째 배송 완료 주문,2016-09~2018-08 분석 관찰 범위,마켓플레이스·다중 카테고리이며 데이터 시작 전 구매 이력은 알 수 없음
+H&M,customer_id,고객·날짜·판매채널 조합 1개,0일 재구매를 제외한 N일 내 두 번째 구매 이벤트,2018-09~2020-09,패션 단일기업이며 실제 주문번호가 없어 구매 이벤트가 대체키에 의존
+REES46,user_id,고객·세션 조합 1개,N일 내 두 번째 관찰 구매 이벤트,2019-10~2019-11,두 달 관찰·세션 대체키이며 첫 구매는 생애 최초 구매가 아님

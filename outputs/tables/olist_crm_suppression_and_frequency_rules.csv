@@ -1,0 +1,10 @@
+condition,evaluation_time,execution_action,analysis_action,required_source,frequency_cap_definition
+marketing_consent_invalid,pre_send,suppress,retain original assignment for ITT,CRM consent source,maximum 1 experimental contact per customer in 30 days
+global_unsubscribe_or_do_not_contact,pre_send,suppress,retain original assignment for ITT,suppression list,maximum 1 experimental contact per customer in 30 days
+no_contactable_owned_channel,pre_send,suppress,retain original assignment for ITT,CRM profile,maximum 1 experimental contact per customer in 30 days
+first_order_cancelled_before_trigger,pre_send,suppress,retain original assignment for ITT,orders,maximum 1 experimental contact per customer in 30 days
+fraud_employee_test_account,pre_send,suppress,retain original assignment for ITT,account controls,maximum 1 experimental contact per customer in 30 days
+already_contacted_for_same_experiment,pre_send,suppress duplicate,retain original assignment for ITT,send log,maximum 1 experimental contact per customer in 30 days
+frequency_cap_reached,pre_send,suppress,retain original assignment for ITT,contact history,maximum 1 experimental contact per customer in 30 days
+message_delivery_failure,post_assignment,do not resend outside protocol,retain in treatment for ITT,delivery log,maximum 1 experimental contact per customer in 30 days
+message_not_opened,post_assignment,no exclusion,retain in treatment for ITT,engagement log,maximum 1 experimental contact per customer in 30 days

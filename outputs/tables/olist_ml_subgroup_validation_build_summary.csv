@@ -1,0 +1,6 @@
+check_name,actual_value,expected_value,passed
+test_customer_count,17355,17355,True
+test_positive_count,108,108,True
+missing_joined_feature_count,0,0,True
+global_top10_count,1736,1736,True
+dimension_count,5,5,True

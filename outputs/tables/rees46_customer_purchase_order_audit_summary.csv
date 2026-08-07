@@ -1,0 +1,16 @@
+﻿check_name,value,status
+customer_rows,697470,PASS
+unique_users,697470,PASS
+duplicate_user_rows,0,PASS
+purchase_event_count_sum,1402758,PASS
+single_purchase_customers,440511,PASS
+repeat_purchase_customers,256959,PASS
+single_customer_with_second_purchase,0,PASS
+repeat_customer_without_second_purchase,0,PASS
+negative_second_purchase_gap,0,PASS
+same_timestamp_second_purchase_customers,0,PASS
+first_after_last_purchase_rows,0,PASS
+negative_observation_days_rows,0,PASS
+customers_with_cross_month_event,8,PASS
+customers_with_over_24h_event,46,PASS
+observation_end_time,2019-11-30 23:59:44+00:00,PASS

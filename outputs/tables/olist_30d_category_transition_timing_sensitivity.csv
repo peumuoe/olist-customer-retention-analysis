@@ -1,0 +1,6 @@
+followup_timing_band,transition_customer_count,same_category_count,share_of_30d_transitions_pct,same_category_share_pct
+same_timestamp,248,160,18.062637,64.516129
+over_0_to_1_hour,540,349,39.329934,64.62963
+over_1_to_24_hours,50,34,3.641661,68.0
+over_1_to_7_days,154,86,11.216315,55.844156
+over_7_to_30_days,381,211,27.749454,55.380577

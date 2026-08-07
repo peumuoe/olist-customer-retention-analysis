@@ -1,0 +1,11 @@
+﻿check_name,actual,expected,status
+comparison_rows,5,5,PASS
+window_key_duplicates,0,0,PASS
+olist_30d_numerator,1373,1373,PASS
+olist_30d_denominator,86772,86772,PASS
+hm_30d_primary_numerator,372888,372888,PASS
+rees46_30d_numerator,139956,139956,PASS
+rees46_available_windows,2,2,PASS
+olist_source_rate_max_rounding_diff_lt_0_0001,True,True,PASS
+h&m_source_rate_max_rounding_diff_lt_0_0001,True,True,PASS
+rees46_source_rate_max_rounding_diff_lt_0_0001,True,True,PASS

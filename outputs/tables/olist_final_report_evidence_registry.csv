@@ -1,0 +1,14 @@
+claim,evidence_level,source_table,main_limit,allowed_use
+Olist 30·60·90·180·365일 재구매율,L1_audited_descriptive,retention_window_summary.csv,관찰기간 적격 고객 기준,사업 KPI 수준 진단
+H&M·REES46 외부 비교,L1_descriptive_non_comparable,external_retention_comparison.csv,지표·상품·채널·사업모델 차이,격차의 방향과 규모 참고만 가능
+개선기회 우선순위,L1_observational_priority,olist_improvement_opportunity_priority.csv,관찰 관계이며 인과효과 아님,분석·CRM 가설 후보
+로지스틱 상위 10% 농축,L2_independent_predictive_validation,olist_ml_test_lift_recall.csv,"테스트 양성 108명, Recall 제한",발송 후보 압축 보조
+시간 안정성,L2_temporal_predictive_validation,olist_ml_temporal_stability_summary.csv,4개 미래 구간에 한정,순위 신호 재현성 확인
+Q3·Q4 하위집단 성능,L2_subgroup_descriptive_validation,olist_ml_subgroup_performance.csv,세부 양성 수가 적음,파일럿 모집 위험 제한
+CRM 증분효과,L3_randomized_causal_required,olist_crm_experiment_protocol.csv,실제 캠페인 미실행,현재 효과 주장 불가
+합성 ITT 시나리오,L0_pipeline_validation_only,olist_crm_synthetic_scenario_summary.csv,전부 합성 데이터,분석 코드 검증만 가능
+재구매 시간 생존분석,L1_descriptive_survival,olist_repurchase_survival_summary.csv,달력 코호트와 중도절단 독립 가정 제한,재구매 시점 분포와 KPI 민감도 설명
+30·60·90일 동결점수 비교,L2_research_appendix,olist_multihorizon_frozen_score_summary.csv,"30일 모델을 다른 결과창에 적용, 긴 기간 표본 감소",CRM Primary·Secondary 결과창 선택 보조
+모델 오류·수용량 분석,L2_independent_predictive_diagnostic,olist_crm_capacity_frontier.csv,"테스트 양성 108명, 관찰 재구매는 증분효과 아님",파일럿 발송량과 누락 위험 설명
+최종 통합 CRM 플레이북,L2_design_not_executed,olist_final_integrated_crm_playbook.csv,"실제 발송 승인 0명, 런치 차단 4개",Olist의 조건부 실행·검증 의사결정안
+불균형 처리 진단,L2_research_appendix_posthoc,olist_imbalance_diagnostic_conclusion.csv,"검증 개선 미미, 테스트 재사용, 확률 왜곡",성능 병목과 모델 유지 판단

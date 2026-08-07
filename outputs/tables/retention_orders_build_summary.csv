@@ -1,0 +1,15 @@
+﻿check_name,value
+source_order_rows,99441
+source_delivered_order_rows,96478
+retention_mart_rows,96478
+unique_order_ids,96478
+duplicate_order_id_rows,0
+null_order_id_rows,0
+null_customer_id_rows,0
+null_customer_unique_id_rows,0
+unique_customers,93358
+single_order_customers,90557
+repeat_customers,2801
+maximum_customer_order_count,15
+minimum_purchase_timestamp,2016-09-15 12:16:38
+maximum_purchase_timestamp,2018-08-29 15:00:37

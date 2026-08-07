@@ -1,0 +1,6 @@
+﻿window_days,olist_eligible_customers,olist_repeat_customers,olist_retention_rate_pct,hm_eligible_customers,hm_repeat_customers,hm_retention_rate_pct,rees46_eligible_customers,rees46_repeat_customers,rees46_retention_rate_pct,hm_gap_vs_olist_pct_point,rees46_gap_vs_olist_pct_point,hm_comparison_role,rees46_comparison_role,causal_interpretation_allowed
+30,86772,1373,1.5823,1338029,372888,27.8685,347118.0,139956.0,40.31943,26.2862,38.73713,동일 공식·보수적 외부 비교,동일 공식·구조 차이를 동반한 주 비교,False
+60,81203,1584,1.9507,1316521,517218,39.2867,14064.0,8388.0,59.641638,37.336,57.690938,동일 공식·보수적 외부 비교,분모 대표성 부족으로 제한적 참고,False
+90,75320,1714,2.2756,1291147,602803,46.6874,,,,44.4118,,동일 공식·보수적 외부 비교,관찰기간 부족으로 비교 불가,False
+180,55907,1736,3.1052,1189917,707680,59.4731,,,,56.3679,,동일 공식·보수적 외부 비교,관찰기간 부족으로 비교 불가,False
+365,21288,965,4.5331,1008713,724724,71.8464,,,,67.3133,,동일 공식·보수적 외부 비교,관찰기간 부족으로 비교 불가,False

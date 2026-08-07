@@ -1,0 +1,14 @@
+﻿metric_type,metric_role,window_days,observation_cutoff,eligible_first_purchase_cutoff,eligible_customers,repeat_customers,non_repeat_customer_count,retention_rate_pct,definition_note
+official_any_second_delivered_order,business_diagnosis,30,2018-08-29 15:00:37,2018-07-30 15:00:37,86772,1373,85399,1.5823,second delivered order within the full observation window
+official_any_second_delivered_order,business_diagnosis,60,2018-08-29 15:00:37,2018-06-30 15:00:37,81203,1584,79619,1.9507,second delivered order within the full observation window
+official_any_second_delivered_order,business_diagnosis,90,2018-08-29 15:00:37,2018-05-31 15:00:37,75320,1714,73606,2.2756,second delivered order within the full observation window
+official_any_second_delivered_order,business_diagnosis,180,2018-08-29 15:00:37,2018-03-02 15:00:37,55907,1736,54171,3.1052,second delivered order within the full observation window
+official_any_second_delivered_order,business_diagnosis,365,2018-08-29 15:00:37,2017-08-29 15:00:37,21288,965,20323,4.5331,second delivered order within the full observation window
+operational_second_order_over_24h,ml_and_crm_target,1,2018-08-29 15:00:37,,93331,0,93331,0.0,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,7,2018-08-29 15:00:37,,92801,161,92640,0.1734895098113167,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,14,2018-08-29 15:00:37,,91139,316,90823,0.3467231371860564,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,30,2018-08-29 15:00:37,,86772,535,86237,0.6165583367906697,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,60,2018-08-29 15:00:37,,81203,784,80419,0.9654815708779232,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,90,2018-08-29 15:00:37,,75320,931,74389,1.2360594795539033,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,180,2018-08-29 15:00:37,,55907,1052,54855,1.881696388645429,second delivered order must occur over 24 hours after first order
+operational_second_order_over_24h,ml_and_crm_target,365,2018-08-29 15:00:37,,21288,684,20604,3.2130777903043963,second delivered order must occur over 24 hours after first order

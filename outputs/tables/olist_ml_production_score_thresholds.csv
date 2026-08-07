@@ -1,0 +1,9 @@
+threshold_scope,group_value,top_fraction,population_count,selected_count,minimum_selected_score,tie_break_rule,operating_status
+global,all,0.05,93358,4667,0.009049217217717906,score_desc_then_customer_unique_id_asc,comparison_scenario
+global,all,0.1,93358,9335,0.008053549240629019,score_desc_then_customer_unique_id_asc,comparison_scenario
+global,all,0.2,93358,18671,0.007171266891672247,score_desc_then_customer_unique_id_asc,comparison_scenario
+order_value_band,Q1_low,0.1,23356,2335,0.007833962696773795,score_desc_then_customer_unique_id_asc,monitor_only
+order_value_band,Q2,0.1,23323,2332,0.007895407365752533,score_desc_then_customer_unique_id_asc,monitor_only
+order_value_band,Q3,0.1,23340,2334,0.00762639652266427,score_desc_then_customer_unique_id_asc,pilot_candidate
+order_value_band,Q4_high,0.1,23338,2333,0.009001151408259052,score_desc_then_customer_unique_id_asc,pilot_candidate
+order_value_band,unknown,0.1,1,0,,score_desc_then_customer_unique_id_asc,monitor_only
