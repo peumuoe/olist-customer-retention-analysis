@@ -1,0 +1,5 @@
+﻿first_order_value_quartile,eligible_customers,median_first_payment,business_kpi_30d_pct,model_target_over_24h_30d_pct
+Q1,21693,43.29,1.73,0.62
+Q2,21693,80.89,1.77,0.62
+Q3,21693,136.02,1.41,0.53
+Q4,21692,265.5,1.42,0.69

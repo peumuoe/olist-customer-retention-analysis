@@ -1,0 +1,6 @@
+﻿window_days,eligible_customer_count,repeat_customer_count,repeat_rate_pct
+30,86772,1373.0,1.5823
+60,81203,1584.0,1.9507
+90,75320,1714.0,2.2756
+180,55907,1736.0,3.1052
+365,21288,965.0,4.5331

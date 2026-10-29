@@ -1,0 +1,4 @@
+﻿purchase_step,transitions,within_1h_pct,over_1h_to_24h_pct,over_1d_to_30d_pct,over_30d_to_180d_pct,over_180d_pct,median_gap_days
+1 → 2,2801,28.5,2.0,20.0,32.3,17.3,29.0
+2 → 3,228,19.3,5.3,22.4,42.5,10.5,38.0
+3 → 4+,91,11.0,3.3,35.2,44.0,6.6,31.6

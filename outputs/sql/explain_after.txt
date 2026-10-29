@@ -1,0 +1,66 @@
+╭─ Summary ──────────╮
+│ Total Time: 0.200s │
+│ Data Read: 70.3 MB │
+╰────────────────────╯
+╭─ Order By ─────────────────────────────────────────────╮
+│ Order By: customer_state ASC                           │
+│ 27 rows                                            0µs │
+╰────────────────────────────┬───────────────────────────╯
+╭─ Projection ───────────────┴───────────────────────────╮
+│ Projections: customer_state, customers, avg_lat,       │
+│              avg_lng                                   │
+│ 27 rows                                            0µs │
+╰────────────────────────────┬───────────────────────────╯
+╭─ Projection ───────────────┴───────────────────────────╮
+│ Projections:                                           │
+│ customer_state, customers, sum(lat_sum),               │
+│ CAST(sum(geo_rows) AS DOUBLE), sum(lng_sum)            │
+│ 27 rows                                            0µs │
+╰────────────────────────────┬───────────────────────────╯
+╭─ CTE ──────────────────────┴───────────────────────────╮
+│ CTE Name: __aggregate_cte_28                           │
+│ Table Index: 28                                        │
+│ Execution Mode: STREAMING_FANOUT                       │
+│ Fanout Mode: DIRECT                                    │
+│ Consumers: 2                                           │
+│ Direct Consumers: 2                                    │
+│ Buffered Consumers: 0                                  │
+│ Chunk Storage: NONE                                    │
+│ Order Mode: UNORDERED                                  │
+│ 0 rows                                          60.0ms │
+╰────────────────────────────┬───────────────────────────╯
+                             ├───────────────────────────────────────────────────────────────────────────────────────────────╮
+╭─ Projection ───────────────┴───────────────────────────╮                                              ╭─ Projection ───────┴───────────────────╮
+│ Projections: #3, #4, #0, #1, #2                        │                                              │ Projections: #3, #4, #0, #1, #2        │
+│ 99,163 rows                                        0µs │                                              │ 27 rows                            0µs │
+╰────────────────────────────┬───────────────────────────╯                                              ╰────────────────────┬───────────────────╯
+╭─ Hash Join ────────────────┴───────────────────────────╮                                              ╭─ Hash Join ────────┴───────────────────╮
+│ Join Type: INNER                                       │                                              │ Join Type: INNER                       │
+│ Conditions:                                            │                                              │ Conditions: #0 IS NOT DISTINCT FROM #0 │
+│ geolocation_zip_code_prefix = customer_zip_code_prefix │                                              │ 27 rows                            0µs │
+│ 99,163 rows                                     10.0ms │                                              ╰────────────────────┬───────────────────╯
+╰────────────────────────────┬───────────────────────────╯                                                                   ├────────────────────────────────────────╮
+                             ├───────────────────────────────────────────────────╮                      ╭─ Hash Group By ────┴───────────────────╮  ╭─ Hash Group By ─┴────────────────╮
+╭─ Hash Group By ────────────┴───────────────────────────╮  ╭─ Table Scan ───────┴───────────────────╮  │ Groups: #0                             │  │ Groups: #0                       │
+│ Groups: #0                                             │  │ Function: READ_CSV_AUTO                │  │ Aggregates: sum(#1), sum(#2), sum(#3)  │  │ Aggregates: count(#1)            │
+│ Aggregates: sum(#1), sum(#2), count_star()             │  │ Projections: customer_unique_id,       │  │ 27 rows                         30.0ms │  │ 27 rows                   20.0ms │
+│ 19,015 rows                                     70.0ms │  │              customer_zip_code_prefix, │  ╰────────────────────┬───────────────────╯  ╰─────────────────┬────────────────╯
+╰────────────────────────────┒┎──────────────────────────╯  │              customer_state            │  ╭─ Projection ───────┴───────────────────╮  ╭─ Projection ────┴────────────────╮
+╭─ Projection ───────────────┚┖──────────────────────────╮  │ Total Files Read: 1                    │  │ Projections: customer_state, lat_sum,  │  │ Projections: #0, #1              │
+│ Projections: geolocation_zip_code_prefix,              │  │ Filename(s):                           │  │              geo_rows, lng_sum         │  │ 95,867 rows                  0µs │
+│              geolocation_lat, geolocation_lng          │  │ data/raw/olist_customers_dataset.csv   │  │ 99,163 rows                        0µs │  ╰─────────────────┬────────────────╯
+│ 1,000,163 rows                                     0µs │  │ 99,441 rows                     60.0ms │  ╰────────────────────┬───────────────────╯  ╭─ Hash Group By ─┴────────────────╮
+╰────────────────────────────┒┎──────────────────────────╯  ╰────────────────────────────────────────╯  ╭─ CTE Scan ─────────┴───────────────────╮  │ Groups: #0, #1                   │
+╭─ Table Scan ───────────────┚┖──────────────────────────╮                                              │ CTE Index: 28                          │  │ 95,867 rows              120.0ms │
+│ Function: READ_CSV_AUTO                                │                                              │ CTE Mode: DIRECT                       │  ╰─────────────────┬────────────────╯
+│ Projections: geolocation_zip_code_prefix,              │                                              │ Consumer: 0                            │  ╭─ Projection ────┴────────────────╮
+│              geolocation_lat, geolocation_lng          │                                              │ 99,163 rows                        0µs │  │ Projections: customer_state,     │
+│ Total Files Read: 1                                    │                                              ╰────────────────────────────────────────╯  │              customer_unique_id  │
+│ Filename(s):                                           │                                                                                          │ 99,163 rows                  0µs │
+│ data/raw/olist_geolocation_dataset.csv                 │                                                                                          ╰─────────────────┬────────────────╯
+│ 1,000,163 rows                                 430.0ms │                                                                                          ╭─ CTE Scan ──────┴────────────────╮
+╰────────────────────────────────────────────────────────╯                                                                                          │ CTE Index: 28                    │
+                                                                                                                                                    │ CTE Mode: DIRECT                 │
+                                                                                                                                                    │ Consumer: 1                      │
+                                                                                                                                                    │ 99,163 rows                  0µs │
+                                                                                                                                                    ╰──────────────────────────────────╯
