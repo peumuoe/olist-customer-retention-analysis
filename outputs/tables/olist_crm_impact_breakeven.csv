@@ -1,0 +1,5 @@
+﻿margin_assumption,message_cost_assumption,breakeven_relative_uplift_pct,breakeven_at_base_low_pct,breakeven_at_base_high_pct
+margin_10pct,email_0.05,14.1,22.8,8.7
+margin_10pct,sms_0.30,84.6,137.1,52.4
+margin_20pct,email_0.05,7.0,11.4,4.4
+margin_20pct,sms_0.30,42.3,68.5,26.2
